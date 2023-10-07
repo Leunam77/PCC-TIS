@@ -1,0 +1,17 @@
+.tipoEvento{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-image: url('../images/TipoDeEvento1.jpeg');
+    filter: brightness(0.7);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 50px;
+    cursor: pointer;
+}
+
