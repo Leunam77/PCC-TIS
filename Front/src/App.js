@@ -1,8 +1,10 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import NavbarUser from './components/NavbarUser';
 import TipoDeEvento from './components/TipoDeEvento';
 import ContenedorSlider from './components/ContenedorSlider';
+import NewsSide from './components/NewsSide';
+import ListaEventos from './components/ListaEventos';
+import Eventos from './components/Eventos';
 
 function App() {
   return (
@@ -11,12 +13,19 @@ function App() {
       <div className="background-image"></div> {/* Componente de fondo */}
       <div className="content">
         <NavbarUser/>
-        <div class="contenedor">
-          <div class="columna1">
-            <ContenedorSlider/>
+        <div className="contenedor">
+          <div className="columna1">
+            <div className='colSlider'>
+              <ContenedorSlider/>
+            </div>
+            <ListaEventos/>
+            <Eventos/>
+            <Eventos/>
+            <Eventos/>
+            <Eventos/>
           </div>
-          <div class="columna2">
-              Contenido de la Columna 2
+          <div className="columna2">
+            <NewsSide/>
           </div>
         </div>
       </div>

@@ -9,7 +9,7 @@
   height: auto;
 }
 .background-image{
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -17,8 +17,28 @@
   background-image: url('images/backgroundImage.jpg'); /* Ruta de la imagen de fondo */
   background-size: cover;
   filter: brightness(0.4); 
+
 }
 .content{
   position: relative;
   z-index: 1;
+}
+.contenedor {
+  display: flex;
+  margin-top: 30px;
+}
+
+.columna1{
+  flex: 3;
+  padding: 20px;
+}
+.colSlider{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.columna2 {
+  flex: 1;
+  padding: 20px;
+  margin-top: 30px;
 }
