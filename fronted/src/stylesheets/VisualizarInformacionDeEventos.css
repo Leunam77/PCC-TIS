@@ -1,3 +1,63 @@
 .visualizadorDeEventos{
     font-size: 1.2rem;
 }
+.content{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+.miButtonEdit{
+    background-color: #fbff00;
+    color: #000000;
+    border: none;
+    padding: 10px 30px;
+    margin-left: 150px;
+    margin-right: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.miButtonVer{
+    background-color: #fbff00;
+    color: #000000;
+    border: none;
+    padding: 10px 10px;
+    margin-left: 50px;
+    margin-right: 150px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.miButtonRegistrar{
+    background-color: #fbff00;
+    color: #000000;
+    border: none;
+    padding: 10px 10px;
+    margin-left: 50px;
+    margin-right: 150px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.logo{
+    margin-left: 20%;
+    margin-right: 20px;
+}
+.informacion{
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: gray;
+    border-radius: 10px;
+    min-width: 400px;
+}
+.descripcion{
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+}
+.requerimientos{
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+}
+.patOrg{
+    margin-right: 20%;
+    margin-left: 20px;
+}

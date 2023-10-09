@@ -35,6 +35,7 @@ nav{
     font-weight: auto;
     color: #f6f6f6;
     transition: 0.3s ease-in-out;
+    padding-left: 25px;
 }
 #navbar li a:hover,
 #navbar li a.active{

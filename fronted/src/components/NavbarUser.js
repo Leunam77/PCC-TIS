@@ -1,6 +1,9 @@
 import React, {useEffect,useState} from 'react';
 import ReactDOM from 'react-dom';
 import "../stylesheets/NavbarStyles.css";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faCaretDown,faPaperPlane,faBell, faUser} from '@fortawesome/free-solid-svg-icons'
+
 
 function NavbarUser(){
     return(
@@ -15,10 +18,10 @@ function NavbarUser(){
             </div> 
             <div>
                 <ul id='navbar'>
-                <li><a className='active' href=''> Eventos</a></li>
-                    <li><a href=''> Notificaciones </a></li>
-                    <li><a href=''> Mis eventos</a></li>
-                    <li><a href=''> Perfil</a></li>
+                <li><a href=''><FontAwesomeIcon icon={faPaperPlane} /></a></li>
+                <li><a href=''><FontAwesomeIcon icon={faBell} /></a></li>
+                <li><a href=''> Mis eventos</a></li>
+                <li><a href=''><FontAwesomeIcon icon={faUser} /></a></li>
                 </ul>
             </div>
         </nav>
