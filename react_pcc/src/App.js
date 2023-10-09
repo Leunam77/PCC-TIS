@@ -2,9 +2,6 @@ import React from "react";
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 import Home_Admin from "./pages/Home_Admin.js";
-
-
-
 import Add_Event from "./pages/Add_Event.js";
 import Add_Type_Event from "./pages/Add_Type_Evento.js";
 

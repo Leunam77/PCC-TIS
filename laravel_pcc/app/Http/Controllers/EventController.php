@@ -7,6 +7,19 @@ use Illuminate\Http\Request;
 
 class EventController extends Controller
 {
+
+    public function index(){
+
+        $events = Event::all();
+        return response()->json([
+            'status' => 200,
+            'events' => $events,
+
+        ]);
+
+    }
+
+
     public function store(Request $request){
 
         $evento = new Event();
@@ -28,6 +41,5 @@ class EventController extends Controller
             'message' => 'Evento añadido exitosamente',
         ]);
 
-        
     }
 }

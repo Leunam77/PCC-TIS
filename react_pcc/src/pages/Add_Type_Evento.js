@@ -21,6 +21,7 @@ class Add_Type_Event extends Component{
         const res = await axios.post('http://127.0.0.1:8000/api/add-event_type', this.state);
         if(res.data.status === 200){
             console.log(res.data.message);
+
             this.setState({
                 nombre_tipo_evento: '',
 
