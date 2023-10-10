@@ -11,9 +11,7 @@ function ContenedorSlider(){
         <div className='containerSlider'>
             <NavbarAdmin/>
             <VisualizarInformacionDeEventosAdmin/>
-            <NavbarUser/>
-            <VisualizarInformacionDeEventosUser/>
-        </div>
+            </div>
     )
 }
 
