@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 import "../stylesheets/CreateEventStyle.css";
-// import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import {faArrowUpFromBracket} from '@fortawesome/free-solid-svg-icons';
+
+const plus = <FontAwesomeIcon icon={faPlus} />
+const addBrac = <FontAwesomeIcon icon={faArrowUpFromBracket} />
+
+// ReactDOM.render(plus, document.body)
 
 class CreateEvents extends Component{
     constructor(props){
@@ -67,12 +75,15 @@ class CreateEvents extends Component{
                 </div>
                 <div className='tipoEvento' id='entrada'>
                     <p id='textoCuadro'>Tipo de evento</p>
+                    <button id='iconsImp'> {plus}</button>
                 </div>
-                <div className='Patrocinadores' id='entrada'>
+                <div className='patrocinadores' id='entrada'>
                     <p id='textoCuadro'>Patrocinadores</p>
+                    <button id='iconsImp'> {addBrac}</button>
                 </div>
-                <div className='Organizadores' id='entrada'>
+                <div className='organizadores' id='entrada'>
                     <p id='textoCuadro'>Organizadores</p>
+                    <button id='iconsImp'> {addBrac}</button>
                 </div>    
                 <div className='botonEnviar'>
                     <button className='botonRegistrar' onClick={this.handleSubmit}> Registrarse </button>

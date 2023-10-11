@@ -5,6 +5,8 @@
     border-radius: 8px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 .textoEvento{
     background-color: #14365C;
@@ -21,7 +23,6 @@
     margin-bottom: 2vh;
     margin-top: 2vh;
     border-radius: 5px;
-    text-align: left;
 }
 .botonRegistrar{
     background-color: rgb(255, 213, 30);
@@ -43,14 +44,30 @@
 
 #textoCuadro{
     font-size: small;
-    text-align: start;
-    width: 20vw;
-    margin-left: 4px;
+    text-align: left;
+    width: 100%;
+    margin-left: 1vw;
     margin-top: 4px;
 }
 input{
     font-size: small;
     margin: 3px;
-    width: 20vw;
-    padding: 4px;
+    width: 95%;
+    padding: 2px;
+}
+.tipoEvento{
+    display: flex;
+    flex-direction: row;
+}
+.patrocinadores{
+    display: flex;
+    flex-direction: row;
+}
+.organizadores{
+    display: flex;
+    flex-direction: row;
+}
+#iconsImp{
+    background-color: white;
+    margin: 3px;
 }
