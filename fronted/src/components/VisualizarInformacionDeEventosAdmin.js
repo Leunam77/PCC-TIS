@@ -6,9 +6,9 @@ import axios from 'axios';
 function VisualizarInformacionDeEventosAdmin(){
     
     const [logos, setLogo] = useState([]);
-    
+    const [eventos, setEvento] = useState([]);
     useEffect(() => {
-        //Obtener Datos del logo
+        //Obtener Datos del logo  http://localhost:5000/logo/
         axios.get('http://')
           .then((res) => {
             setLogo(res.data);
@@ -17,23 +17,41 @@ function VisualizarInformacionDeEventosAdmin(){
             console.log(err);
           });
       }, []);
+      useEffect(() => {
+        //Obtener Datos de la descripcion requerimientos y nombre del evento
+         axios.get('http://')
+          .then((res) => {
+            setEvento(res.data);
+          })
+          .catch((err) => {
+            console.log(err);
+          });
+      }, []);
     return(
         <div className='visualizadorDeEventos'>
-            <h1>Taller sobre capacitacion sobre lenguaje C#</h1>
+            {eventos.map((evento) => (
+                <h1>
+                    {evento.nombre_Evento}
+                </h1>
+                ))}
+
             <div className='content'>
+                {logos.map((logo) => (
                 <div className='logo'>
-                    <tbody>
-                        {logos.map((logo) => (
-                        <tr>
-                            key={logo.idlogo}
-                            {logo.imglogo}
-                        </tr>))}
-                    </tbody>
+                    {logo.imglogo}
                 </div>
+                ))}
+                {eventos.map((evento) => (
                 <div className='informacion'>
-                    <div className='descripcion'>Este taller contendra diferentes </div>
-                    <div className='requerimientos'>req</div>
+                    <div className='descripcion'>
+                        {evento.descripcion_Evento}
+                    </div>
+                    <div className='requerimientos'>
+                        {evento.descripcion_Evento}
+                    </div>
                 </div>
+            ))}
+            
                 <div className='patOrg'>
                     <div className='inscripciones'>inscripciones cerradas</div>
                     <div className='Patrocinadores'>
