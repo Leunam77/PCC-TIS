@@ -51,3 +51,9 @@ nav{
     left: 20px;
 
 }
+svg{
+    fill: white;
+}
+svg:hover {
+    fill: #FFD51D;
+}

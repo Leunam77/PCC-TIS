@@ -88,9 +88,21 @@
     border: 1px solid #7D7D7D;
     color: white;
 }
-table{
+
+.Patrocinadores{
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 150px;
+    margin: 70px;
+    color: #14365C;
 }
+.Organizadores{
+    display: flex;
+    justify-content: center;
+    margin: 70px;
+    color: #14365C;
+}
+
+.edit{
+    fill: #000000;
+}
+

@@ -16,23 +16,32 @@ function VisualizarInformacionDeEventosUser(){
                     <div className='Patrocinadores'>
                         <table>
                             <thead><tr><th>Patrocinadores</th></tr></thead>
-                            <tbody><tr><td></td></tr></tbody>
+                            <tbody>
+                                <tr>
+                                    <td>a</td>
+                                </tr>
+                            </tbody>
                         </table>
                         
                     </div>
                     <div className='Organizadores'>
                         <table>
                             <thead><tr><th>Organizadores</th></tr></thead>
-                            <tbody><tr><td></td></tr></tbody>
+                            <tbody>
+                                <tr>
+                                    <td>a</td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
-                </div>
-                
+                </div>   
             </div>
             <div className='buttons'>
                 <button className='miButtonRegistrar'>Registrarse</button>
             </div>
+            
         </div>
+        
     )
 }
 
