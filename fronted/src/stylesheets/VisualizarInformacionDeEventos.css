@@ -44,18 +44,18 @@
     border: 1px solid #7D7D7D;
 }
 .logo{
-    min-width: 15%; /* Tamaño mínimo */
+    min-width: 15%; 
     max-height: 350px;
-    margin: 0 auto; /* Centra los divs horizontalmente */
+    margin: 0 auto;
     margin-right: 0;
     margin-top: 50px;
-    padding: 20px; /* Agrega espacio interno para contenido */
+    padding: 20px; 
     border: 1px solid #7D7D7D;
 }
 .informacion{
-    min-width: 30%; /* Tamaño mínimo */
-    margin: 10px auto; /* Centra los divs horizontalmente */
-    padding: 20px; /* Agrega espacio interno para contenido */
+    min-width: 30%; 
+    margin: 10px auto; 
+    padding: 20px; 
     border: 1px solid #7D7D7D;
     background-color: #7D7D7D;
     border-radius: 10px;
@@ -75,9 +75,9 @@
     max-height: 300px;
 }
 .patOrg{
-    min-width: 20%; /* Tamaño mínimo */
-    margin: 10px auto; /* Centra los divs horizontalmente */
-    padding: 20px; /* Agrega espacio interno para contenido */
+    min-width: 20%; 
+    margin: 10px auto; 
+    padding: 20px; 
     margin-left: 0;
     justify-content: center;
 }
